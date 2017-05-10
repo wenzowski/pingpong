@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @game.date %>
+</p>
+
+<p>
+  <strong>Winner:</strong>
+  <%= @game.winner_id %>
+</p>
+
+<p>
+  <strong>Loser:</strong>
+  <%= @game.loser_id %>
+</p>
+
+<p>
+  <strong>Winner score:</strong>
+  <%= @game.winner_score %>
+</p>
+
+<p>
+  <strong>Loser score:</strong>
+  <%= @game.loser_score %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
