@@ -11,11 +11,14 @@ gem 'turbolinks',   '~> 2.5.3'
 gem 'devise',       '~> 3.5.2'
 gem 'devise-bootstrap-views', '~> 0.0.6'
 
+gem 'rails_12factor', :group => :production
+
 group :development  do
   gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
+  gem 'rspec-rails'
   gem 'byebug'
   gem 'spring'
 end
